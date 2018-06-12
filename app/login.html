@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/login.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <form method="post" onsubmit="validateForm()" class="form-signin">
+            <h3 class="form-signin-heading">Đăng nhập hệ thống</h3>
+            <br>
+            <input id="username" name="username" type="text" class="form-control" placeholder="Tên tài khoản" required autofocus>
+            <input id="password" name="password" type="password" class="form-control" placeholder="Password" required>
+            <button id="btnLogin" name="btnLogin" class="btn btn-lg btn-primary btn-block" type="submit">Đăng Nhập</button>
+            <br>
+            <p id="msgLogin" name="msgLogin"></p>
+        </form>
+        <script src="./js/login.js"></script>
+</body>
+
+</html>

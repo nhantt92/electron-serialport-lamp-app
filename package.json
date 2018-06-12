@@ -1,0 +1,20 @@
+{
+  "name": "lamp",
+  "version": "1.0.0",
+  "description": "electron serialport",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "serialport"
+  ],
+  "author": "nhantt",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^2.0.2",
+    "electron-rebuild": "^1.7.3",
+    "serialport": "^6.2.0"
+  }
+}
