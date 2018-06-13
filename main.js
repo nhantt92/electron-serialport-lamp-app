@@ -11,7 +11,7 @@ parser.on('data', (data) => {
     var str = data.toString('utf8');
     console.log(str);
 });
-port.write('Node send\n');
+// port.write('Node send\n');
 
 let mainWindow;
 let loginWindow;
@@ -57,10 +57,15 @@ ipcMain.on('app-init', (event, arg) => {
     mainWindow.show();
 });
 
+ipcMain.on('lamp-action', (event, arg)=> {
+    console.log(arg);
+    port.write('action\r\n');
+})
+
 function createMainWindow() {
     mainWindow = new BrowserWindow({ 
         width: 1024, 
-        height: 600, 
+        height: 720, 
         show: false 
     });
     mainWindow.webContents.openDevTools();

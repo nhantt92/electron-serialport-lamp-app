@@ -1,5 +1,7 @@
 body {
-  background: rgb(70, 72, 75);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgb(70, 72, 75);
 }
 
 /* SWITCH */
@@ -95,15 +97,15 @@ body {
 
 /* SWITCH On State */
 .cube-switch .switch-state.on {
-    bottom: 15%;
+    top: 15%;
 }
 
 /* SWITCH Off State */
 .cube-switch .switch-state.off {
-    top: 15%;
+    bottom: 15%;
 }
 
-#light-bulb2 {
+/* #light-bulb2 {
 width: 150px;
 height: 150px;
 background: url(https://lh4.googleusercontent.com/-katLGTSCm2Q/UJC0_N7XCrI/AAAAAAAABq0/6GxNfNW-Ra4/s300/lightbulb.png) no-repeat 0 0;
@@ -118,4 +120,19 @@ left: 40%;
 background: url(https://lh4.googleusercontent.com/-katLGTSCm2Q/UJC0_N7XCrI/AAAAAAAABq0/6GxNfNW-Ra4/s300/lightbulb.png) no-repeat -150px 0;
 cursor: move;
 z-index: 800;
-}
+} */
+
+.light-bulb2 {
+    width: 150px;
+    height: 150px;
+    background: url(https://lh4.googleusercontent.com/-katLGTSCm2Q/UJC0_N7XCrI/AAAAAAAABq0/6GxNfNW-Ra4/s300/lightbulb.png) no-repeat 0 0;
+    }
+
+    #light-bulb {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: url(https://lh4.googleusercontent.com/-katLGTSCm2Q/UJC0_N7XCrI/AAAAAAAABq0/6GxNfNW-Ra4/s300/lightbulb.png) no-repeat -150px 0;
+    cursor: move;
+    z-index: 800;
+    }
